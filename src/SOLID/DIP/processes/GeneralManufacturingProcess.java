@@ -1,4 +1,4 @@
-package SOLID.DI.processes;
+package SOLID.DIP.processes;
 
 public abstract class GeneralManufacturingProcess {
 

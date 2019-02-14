@@ -1,7 +1,7 @@
-package SOLID.DI.clients;
+package SOLID.DIP.clients;
 
-import SOLID.DI.processes.GeneralManufacturingProcess;
-import SOLID.DI.processes.SmartphoneManufacturingProcess;
+import SOLID.DIP.processes.GeneralManufacturingProcess;
+import SOLID.DIP.processes.SmartphoneManufacturingProcess;
 
 public class DeviceFactory {
 
