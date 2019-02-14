@@ -7,8 +7,8 @@ public class SmartphoneManufacturingProcess extends GeneralManufacturingProcess 
     }
 
     @Override
-    void assempleDevice() {
-        System.out.println("Assemple Smartphone");
+    void assembleDevice() {
+        System.out.println("Assemble Smartphone");
     }
 
     @Override
