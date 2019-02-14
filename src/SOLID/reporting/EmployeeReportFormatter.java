@@ -1,6 +1,6 @@
-package SRP.reporting;
+package SOLID.reporting;
 
-import SRP.domain.Employee;
+import SOLID.domain.Employee;
 
 public class EmployeeReportFormatter extends ReportFormatter {
 

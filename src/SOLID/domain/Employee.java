@@ -1,4 +1,4 @@
-package SRP.domain;
+package SOLID.domain;
 
 public class Employee {
 

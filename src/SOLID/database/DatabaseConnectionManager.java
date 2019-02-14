@@ -1,6 +1,6 @@
-package SRP.database;
+package SOLID.database;
 
-import SRP.domain.Employee;
+import SOLID.domain.Employee;
 
 import java.util.ArrayList;
 import java.util.List;

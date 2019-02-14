@@ -1,7 +1,7 @@
-package SRP.dao;
+package SOLID.dao;
 
-import SRP.database.DatabaseConnectionManager;
-import SRP.domain.Employee;
+import SOLID.database.DatabaseConnectionManager;
+import SOLID.domain.Employee;
 
 public class EmployeeDAO {
 
