@@ -1,4 +1,4 @@
-package SOLID.reporting;
+package SOLID.SRP.reporting;
 
 public class ReportFormatter {
 

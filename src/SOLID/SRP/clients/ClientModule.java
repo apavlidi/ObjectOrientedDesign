@@ -1,9 +1,9 @@
-package SOLID.clients;
+package SOLID.SRP.clients;
 
-import SOLID.dao.EmployeeDAO;
-import SOLID.domain.Employee;
-import SOLID.reporting.EmployeeReportFormatter;
-import SOLID.reporting.FormatType;
+import SOLID.SRP.dao.EmployeeDAO;
+import SOLID.SRP.domain.Employee;
+import SOLID.SRP.reporting.EmployeeReportFormatter;
+import SOLID.SRP.reporting.FormatType;
 
 public class ClientModule {
 
