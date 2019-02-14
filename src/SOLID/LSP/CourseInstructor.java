@@ -1,4 +1,4 @@
-package SOLID.LSP.School;
+package SOLID.LSP;
 
 public interface CourseInstructor {
 
