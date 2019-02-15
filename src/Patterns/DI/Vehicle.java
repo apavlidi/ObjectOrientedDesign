@@ -1,4 +1,4 @@
-package Patterns.DependencyInjection;
+package Patterns.DI;
 
 public class Vehicle {
 
