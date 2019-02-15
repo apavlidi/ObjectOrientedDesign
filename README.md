@@ -6,3 +6,9 @@
 
 ## SOLID
 The folder is structured in packages based on the principle it implements each package.
+
+## Patterns
+
+### Builder
+The builder pattern is for constructing objects with many fields. . In this Example the Student class has too many fields so the client should be able to construct with any fields he needs.In order to avoid implemented all possible compinations of constructors we hide the constructor of the Student and we implement a builder inner class.
+It impoves usability and readability.
