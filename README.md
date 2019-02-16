@@ -15,8 +15,12 @@ In this example I implemented a device remote control system. There are three de
 ## Patterns
 
 ### Builder
-The builder pattern is for constructing objects with many fields. In this Example the Student class has too many fields so the client should be able to construct with any fields he needs. In order to avoid implemented all possible compinations of constructors we hide the constructor of the Student and we implement a builder inner class.
-It impoves usability and readability.
+The builder pattern is for constructing objects with many fields and providing a fluent api.
+1. Simple builder
+ In this example the Student class has too many fields so the client should be able to construct with any fields he needs. In order to avoid implemented all possible compinations of constructors we hide the constructor of the Student and we implement a builder inner class.
+2. Facade builder
+  In this example the Student class can be build through two different builders building different facets of the object. The StudentBuilderInfo builds the general info of the Student (firstName, lastName, age) and the StudentBuilderAddress builds the location info (city, address, postCode). Throught the StudentBuilderFacade I provide a builder fluent interface.
+
 
 ### Singleton
 The singleton pattern is for instantiating an object of a class only once. In the example the singleton class has a counter to indicate that only one instance has been created, and a text to indicate that all the variables of this instance point to the same object and have the same data.
