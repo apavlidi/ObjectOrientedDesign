@@ -4,13 +4,18 @@
 1. The SOLID folder has implementations of the SOLID principles of object oriented design.
 1. The Patterns folder has implementations of common design patterns of object oriented software.
 
+
 ## SOLID
 The folder is structured in packages based on the principle it implements each package.
+
+### Open Close Principle
+In this example I implemented a device remote control system. There are three devices ( TV, SurroundSoundSystem, Projector) which all implement the Device abstract class. The RemoteControl class holds the connected device and invokes their methods through polymorphism. Instead of having a switch case statement in the RemoteControl class I invoke directly their inhereted methods from Device class.
+
 
 ## Patterns
 
 ### Builder
-The builder pattern is for constructing objects with many fields. . In this Example the Student class has too many fields so the client should be able to construct with any fields he needs.In order to avoid implemented all possible compinations of constructors we hide the constructor of the Student and we implement a builder inner class.
+The builder pattern is for constructing objects with many fields. In this Example the Student class has too many fields so the client should be able to construct with any fields he needs. In order to avoid implemented all possible compinations of constructors we hide the constructor of the Student and we implement a builder inner class.
 It impoves usability and readability.
 
 ### Singleton
@@ -22,5 +27,5 @@ The observer pattern where observers subscribe to a subject and when a specific 
 ### Factory
 The factory pattern is used to construct ojbects without specifying the exact class. The example has a ShapeFactory where it constructs a Circle, a Triangle, and a Square. I avoided the switch case statement on the ShapeFactory and created an Enum Class called ShapeType cause otherwise I would violate the Open Close Principle.
 
-## Dependency Injection
+### Dependency Injection
 Depenedency injection is used where an object supplies the dependencies of an other object instead of hardcoding them. I implemented this through a Vehicle class which has a direct assosiation to the Engine class. Engine can be either LargeEngine or SmallEngine. Instead of hardcoding the engine type in the Vehicle class I pass that as an argument to the constructor of the Vehicle class allowing the client to inject the dependency.
