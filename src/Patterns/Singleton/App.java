@@ -1,5 +1,8 @@
 package Patterns.Singleton;
 
+import Patterns.Singleton.MonoState.MonoState;
+import Patterns.Singleton.Singleton.SingletonClass;
+
 public class App {
 
     public static void main(String[] args) {
@@ -7,21 +10,29 @@ public class App {
 
         SingletonClass singleton1 = SingletonClass.getInstance();
         SingletonClass singleton2 = SingletonClass.getInstance();
-        SingletonClass singleton3 = SingletonClass.getInstance();
-        SingletonClass singleton4 = SingletonClass.getInstance();
-        SingletonClass singleton5 = SingletonClass.getInstance();
 
         System.out.println(singleton1.getCounter());
-        System.out.println(singleton3.getCounter());
-        System.out.println(singleton5.getCounter());
+        System.out.println(singleton2.getCounter());
+
+        singleton1.setRandomText("Text inserted from singleton 1");
+        System.out.println("Printing text from singleton1 variable: " + singleton1.getRandomText());
 
         singleton2.setRandomText("Text inserted from singleton 2");
         System.out.println("Printing text from singleton2 variable: " + singleton2.getRandomText());
 
-        singleton3.setRandomText("Text inserted from singleton 3");
-        System.out.println("Printing text from singleton3 variable: " + singleton3.getRandomText());
+        System.out.println("\nAfter chaning singleton2 var, singleton1 var should have the same value");
+        System.out.println("Printing text from singleton1 variable: " + singleton1.getRandomText());
 
-        System.out.println("Printing text from singleton2 variable: " + singleton2.getRandomText());
 
+        //MonoState not recommended but for the shake of completion
+        System.out.println();
+        MonoState monoState = new MonoState();
+        monoState.setText("random");
+
+        MonoState monoState2 = new MonoState();
+        monoState.setText("Not random");
+
+        System.out.println("MonoState variable 1 : " + monoState.getText());
+        System.out.println("MonoState variable 2 : " + monoState2.getText());
     }
 }

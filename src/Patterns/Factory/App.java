@@ -1,17 +1,19 @@
 package Patterns.Factory;
 
+import static Patterns.Factory.ShapeType.*;
+
 public class App {
 
     public static void main(String[] args) {
         ShapeFactory factory = new ShapeFactory();
 
-        Shape circleShape = factory.getShape(ShapeType.CIRCLE);
+        Shape circleShape = factory.getShape(CIRCLE);
         circleShape.draw();
 
-        Shape triangleShape = factory.getShape(ShapeType.TRIANGLE);
+        Shape triangleShape = factory.getShape(TRIANGLE);
         triangleShape.draw();
 
-        Shape squareShape = factory.getShape(ShapeType.SQUARE);
+        Shape squareShape = factory.getShape(SQUARE);
         squareShape.draw();
     }
 

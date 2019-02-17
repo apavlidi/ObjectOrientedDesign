@@ -1,18 +1,18 @@
-package Patterns.Singleton;
+package Patterns.Singleton.LazySingleton;
 
-public class SingletonClass {
+public class LazySingletonClass {
 
-    private static SingletonClass INSTANCE = null;
+    private static LazySingletonClass INSTANCE = null;
     private static int counter;
     private String randomText;
 
-    private SingletonClass() {
+    private LazySingletonClass() {
         counter++;
     }
 
-    public static SingletonClass getInstance() {
+    public synchronized static LazySingletonClass getInstance() {
         if (INSTANCE == null) {
-            INSTANCE = new SingletonClass();
+            INSTANCE = new LazySingletonClass();
         }
         return INSTANCE;
     }
