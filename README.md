@@ -17,9 +17,9 @@ In this example I implemented a device remote control system. There are three de
 ### Builder
 The builder pattern is for constructing objects with many fields and providing a fluent api.
 1. Simple builder
- In this example the Student class has too many fields so the client should be able to construct with any fields he needs. In order to avoid implemented all possible compinations of constructors we hide the constructor of the Student and we implement a builder inner class.
+ In this example the Student class has too many fields so the client should be able to construct with any fields he needs. In order to avoid implemented all possible combinations of constructors we hide the constructor of the Student and we implement a builder inner class.
 2. Facade builder
-  In this example the Student class can be build through two different builders building different facets of the object. The StudentBuilderInfo builds the general info of the Student (firstName, lastName, age) and the StudentBuilderAddress builds the location info (city, address, postCode). Throught the StudentBuilderFacade I provide a builder fluent interface.
+  In this example the Student class can be build through two different builders building different facets of the object. The StudentBuilderInfo builds the general info of the Student (firstName, lastName, age) and the StudentBuilderAddress builds the location info (city, address, postCode). Through the StudentBuilderFacade I provide a builder fluent interface.
 
 
 ### Singleton
@@ -29,7 +29,7 @@ The singleton pattern is for instantiating an object of a class only once. In th
 The observer pattern where observers subscribe to a subject and when a specific state changes the subject class notifies them. I implemented a simple messaging system. The subject class is the MessageManagerSystem where observers can subscribe/unsubscribe. The observers are different departments (IT, Marketing). Through the MessageManagerSystem object the client publishes an announcement and all the subscribed observers are notified.
 
 ### Factory
-The factory pattern is used to construct ojbects without specifying the exact class. The example has a ShapeFactory where it constructs a Circle, a Triangle, and a Square. I avoided the switch case statement on the ShapeFactory and created an Enum Class called ShapeType cause otherwise I would violate the Open Close Principle.
+The factory pattern is used to construct objects without specifying the exact class. The example has a ShapeFactory where it constructs a Circle, a Triangle, and a Square. I avoided the switch case statement on the ShapeFactory and created an Enum Class called ShapeType cause otherwise I would violate the Open Close Principle.
 
 ### Dependency Injection
-Depenedency injection is used where an object supplies the dependencies of an other object instead of hardcoding them. I implemented this through a Vehicle class which has a direct assosiation to the Engine class. Engine can be either LargeEngine or SmallEngine. Instead of hardcoding the engine type in the Vehicle class I pass that as an argument to the constructor of the Vehicle class allowing the client to inject the dependency.
+Dependency injection is used where an object supplies the dependencies of an other object instead of hardcoding them. I implemented this through a Vehicle class which has a direct association to the Engine class. Engine can be either LargeEngine or SmallEngine. Instead of hardcoding the engine type in the Vehicle class I pass that as an argument to the constructor of the Vehicle class allowing the client to inject the dependency.
