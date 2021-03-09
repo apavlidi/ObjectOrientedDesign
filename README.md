@@ -1,5 +1,7 @@
 # Object Oriented Design Principles and Techniques 
 
+This project was created during my studying of [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.amazon.com/Design-Patterns-Object-Oriented-Addison-Wesley-Professional-ebook/dp/B000SEIBB8). 
+
 ### This project splits in two structures. 
 1. The SOLID folder has implementations of the SOLID principles of object oriented design.
 1. The Patterns folder has implementations of common design patterns of object oriented software.
